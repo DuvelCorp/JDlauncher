@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "JDlauncher", "NostalLauncher\JDlauncher.vbproj", "{5E137998-BE09-4ECD-B57C-72729B643784}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{118C9FF6-D3BA-4461-A41C-43C61C1EF7E8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5E137998-BE09-4ECD-B57C-72729B643784}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E137998-BE09-4ECD-B57C-72729B643784}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E137998-BE09-4ECD-B57C-72729B643784}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E137998-BE09-4ECD-B57C-72729B643784}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6307257D-FF59-4201-9CA3-EB180DCC733D}
+	EndGlobalSection
+EndGlobal
