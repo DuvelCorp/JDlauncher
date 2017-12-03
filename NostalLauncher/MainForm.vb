@@ -1236,10 +1236,10 @@ Public Class MainForm
                 objConn.Open()
                 objCommand = objConn.CreateCommand()
 
-                objCommand.CommandText = "SELECT RealmID, RealmName FROM realm ORDER BY RealmID"
+                objCommand.CommandText = "SELECT r.RealmID, r.RealmName, s.ServerID, s.ServerName FROM realm r INNER JOIN server s on r.ServerID=s.ServerID ORDER BY r.RealmName"
                 objReader = objCommand.ExecuteReader()
                 While (objReader.Read())
-                    dt.Rows.Add(objReader("RealmID"), objReader("RealmName"))
+                    dt.Rows.Add(objReader("RealmID"), (objReader("RealmName") & " of " & objReader("ServerName")))
                 End While
 
                 ComboBoxAccountRealm.DataSource = dt

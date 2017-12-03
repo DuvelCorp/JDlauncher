@@ -66,7 +66,11 @@ Public Class TrayForm
             End If
             Windowed1Item.Tag = ID & ";Screen1"
             Windowed1Item.Image = My.Resources.Square_Windowed
-            AddHandler Windowed1Item.Click, AddressOf CharMenu_Handler
+            If IsChar Then
+                AddHandler Windowed1Item.Click, AddressOf CharMenu_Handler
+            Else
+                AddHandler Windowed1Item.Click, AddressOf AccountMenu_Handler
+            End If
             ParentItem.DropDownItems.Add(Windowed1Item)
 
             If TRAY_SHOW_SUBSUB_WINDOWED Then
@@ -78,7 +82,13 @@ Public Class TrayForm
                 Windowed2Item.Text = "Screen 2"
                 Windowed2Item.Tag = ID & ";Screen2"
                 Windowed2Item.Image = My.Resources.Square_Windowed
-                AddHandler Windowed2Item.Click, AddressOf CharMenu_Handler
+
+                If IsChar Then
+                    AddHandler Windowed2Item.Click, AddressOf CharMenu_Handler
+                Else
+                    AddHandler Windowed2Item.Click, AddressOf AccountMenu_Handler
+                End If
+
                 ParentItem.DropDownItems.Add(Windowed2Item)
 
                 If TRAY_SHOW_SUBSUB_WINDOWED Then
@@ -512,7 +522,6 @@ Public Class TrayForm
 
                 If i = 0 Then
                     MacroRootItem.Dispose()
-                Else
                     r = r - 1
                 End If
 

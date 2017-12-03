@@ -86,7 +86,7 @@ FAVORITES
 ---------
 
 On ACCOUNTS, CHARACTERS and MACROS, you have the possibility to tick the "Favorite" checkbox.
-All the favorite items appear on the root of the Launch menu for easy access.
+All favorite items are duplicated on top root of the Tray menu.
 
 
 ================================================

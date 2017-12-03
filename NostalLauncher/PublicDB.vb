@@ -89,6 +89,16 @@ Module PublicDB
                                              " (19, 'SoftKill', '1') ; "
                     objCommand.ExecuteNonQuery()
 
+
+
+                    objCommand.CommandText = "INSERT INTO realm (RealmID, ServerID, RealmName, RealmType, RealmLang) VALUES " &
+                                        " (12,3,'Lightbringer','PVP','EN');          "
+                    objCommand.ExecuteNonQuery()
+
+                    objCommand.CommandText = "DELETE FROM realm WHERE RealmID=3"
+                    objCommand.ExecuteNonQuery()
+
+
                     SOFT_KILL = True
                     MONITORING = True
                     DB_VERSION = 2
