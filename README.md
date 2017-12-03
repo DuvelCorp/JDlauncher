@@ -40,21 +40,26 @@ In order to customize the application properly, you should keep the following lo
 SERVERS & REALMS
 
 The application comes with several popular private servers embedded. A private server serves most often several Realms.
+
 If the Realm you play on is not listed, you should add it using the SERVERS and REALMS tabs (in that order).
---> For SERVERS, the most important is to properly define the authentication server address (what you normally put in your "realmlist.wtf" file).
---> For REALMS, their names should match exactly those presented to you in game the first time you login into a server.
+
+* For SERVERS, the most important is to properly define the authentication server address (what you normally put in your "realmlist.wtf" file).
+* For REALMS, their names should match exactly those presented to you in game the first time you login into a server.
 
 
 ACCOUNTS
 
 In the ACCOUNTS tab you add the account(s) name and password for each of the Realms on which you want to Auto-Login.
+
 I strongly advise you to encrypt your passwords to keep them save. It is even more important if you are on a shared computer. To do that, activate this option in the SETTINGS prior to enter your accounts. You will have to choose a KEY that will be your master password for the application. The key will be asked once each time you launch the application and securely stored in memory to temporarily decrypt the passwords when you launch the game or select your accounts in the config.
 
 
 CHARACTERS
 
 Last but not least, in order to Auto-Login directly on specific characters, you should add them to your account(s) from the CHARACTERS tab.
+
 Note that this is not mandatory.
+
 The most important for character Auto-Login to work is to specify the INDEX correctly, ie the position in WoW's character selection screen. The top character in the selection screen list has index 1, the second has index 2, and so on...
 
 
@@ -84,8 +89,8 @@ MINIMIZED MODE
 
 When the application is minimized, you can then interact with it using the Ragnaros icon appearing in the notification area.
 
-    Double-click on Ragnaros will bring back the application in Normal mode.
-    Right-click on Ragnaros shows the Tray Menu which give you a fast access to everything in your configuration.
+* Double-click on Ragnaros will bring back the application in Normal mode.
+* Right-click on Ragnaros shows the Tray Menu which give you a fast access to everything in your configuration.
 
 The tray menu is highly customizable from the SETTINGS.
 
@@ -99,12 +104,13 @@ PASSWORD SECURITY
 I strongly advice you to activate Password encryption in the SETTINGS.
 
 If you don't, your passwords will be saved in clear text in your database and everyone who can access your database can also access your passwords.
+
 I am not responsible if such a situation happens.
 
 The only cons of password encryption are:
 
-    You have to choose and memorize a KEY. It can be anything... as usual, the longer, the better.
-    When the application is launched, you'll be asked the KEY . If you don't provide it you won't be able to decrypt your passwords and auto-login.
+* You have to choose and memorize a KEY. It can be anything... as usual, the longer, the better.
+* When the application is launched, you'll be asked the KEY . If you don't provide it you won't be able to decrypt your passwords and auto-login.
 
 That's the little price to pay to ensure the maximum security for your accounts.
 
@@ -120,14 +126,18 @@ HOW IT WORKS ?
 --------------
 
 Here is how the autologin works in case you really not understand it !
+
 When you click on your account or character, behind the scenes, the application modifies your WoW config files on-the-fly to :
 * adapt the authentication server address in the realmlist.wtf and WTF/config.wtf files.
 * adapt the Realm name in WTF/config.wtf
 * adapt the windowed mode setting in WTF/config.wtf
 * resets your last character index in WTF/config.wtf
+
 You don't see this, it takes a nanosecond.
+
 Then it starts the WoW.exe, wait a little bit, and send the following key sequence in the active window:
 YOUR_ACCOUNT | TAB | YOUR_PASSWORD | ENTER.
+
 If you clicked on a character, it waits a little bit again, and then sends a sequence of DOWN keys corresponding to your character index, and ENTER.
 
 You will probably have to play a little bit with the Wait Time parameters in the SETTINGS to find what’s best for your computer, mostly depending on your processor speed and bandwidth.
