@@ -110,9 +110,9 @@ That's the little price to pay to ensure the maximum security for your accounts.
 
 If password encryption is active:
 
-    When you modify an ACCOUNT, passwords are immediately encrypted in the database using Triple DES algorithm (provided by Microsoft)
-    The passwords are never being kept decrypted in memory, they are only decrypted when you start WoW or when you select your account in the config.
-    Your key is stored in a sanitized area of the memory (SecureString), and only safely accessed when a decryption occurs.
+* When you modify an ACCOUNT, passwords are immediately encrypted in the database using Triple DES algorithm (provided by Microsoft)
+* The passwords are never being kept decrypted in memory, they are only decrypted when you start WoW or when you select your account in the config.
+* Your key is stored in a sanitized area of the memory (SecureString), and only safely accessed when a decryption occurs.
 
 -------------------------------------------------------------
 
@@ -121,12 +121,10 @@ HOW IT WORKS ?
 
 Here is how the autologin works in case you really not understand it !
 When you click on your account or character, behind the scenes, the application modifies your WoW config files on-the-fly to :
-
-    adapt the authentication server address in the realmlist.wtf and WTF/config.wtf files.
-    adapt the Realm name in WTF/config.wtf
-    adapt the windowed mode setting in WTF/config.wtf
-    resets your last character index in WTF/config.wtf
-
+* adapt the authentication server address in the realmlist.wtf and WTF/config.wtf files.
+* adapt the Realm name in WTF/config.wtf
+* adapt the windowed mode setting in WTF/config.wtf
+* resets your last character index in WTF/config.wtf
 You don't see this, it takes a nanosecond.
 Then it starts the WoW.exe, wait a little bit, and send the following key sequence in the active window:
 YOUR_ACCOUNT | TAB | YOUR_PASSWORD | ENTER.
