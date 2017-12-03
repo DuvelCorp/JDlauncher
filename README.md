@@ -38,22 +38,20 @@ In order to customize the application properly, you should keep the following lo
 
 
 SERVERS & REALMS
-----------------
 
 The application comes with several popular private servers embedded. A private server serves most often several Realms.
 If the Realm you play on is not listed, you should add it using the SERVERS and REALMS tabs (in that order).
 --> For SERVERS, the most important is to properly define the authentication server address (what you normally put in your "realmlist.wtf" file).
 --> For REALMS, their names should match exactly those presented to you in game the first time you login into a server.
 
+
 ACCOUNTS
---------
 
 In the ACCOUNTS tab you add the account(s) name and password for each of the Realms on which you want to Auto-Login.
 I strongly advise you to encrypt your passwords to keep them save. It is even more important if you are on a shared computer. To do that, activate this option in the SETTINGS prior to enter your accounts. You will have to choose a KEY that will be your master password for the application. The key will be asked once each time you launch the application and securely stored in memory to temporarily decrypt the passwords when you launch the game or select your accounts in the config.
 
 
 CHARACTERS
-----------
 
 Last but not least, in order to Auto-Login directly on specific characters, you should add them to your account(s) from the CHARACTERS tab.
 Note that this is not mandatory.
@@ -63,7 +61,7 @@ The most important for character Auto-Login to work is to specify the INDEX corr
 -------------------------------------------------------------
 
 ADDITIONAL CONFIG
-
+-----------------
 
 LINKS
 
